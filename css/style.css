@@ -70,10 +70,69 @@ body {
   background-color: var(--color-element);
 }
 
+section,
+.container-1,
+.container-2 {
+  background-color: #e0ffff;
+  border: 3px dotted brown;
+}
+
+.div-1 {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.div-2 {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid black;
+}
+
+.div-3 {
+  background-color: lightsalmon;
+  border: 1px solid black;
+}
+
+.div-4 {
+  background-color: lightseagreen;
+  border: 1px solid black;
+}
+
+.container-1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0  auto;
+}
+
+.container-2 {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0  auto;
+}
 
 /* ---------------
     HEADER
 ----------------*/
+
+header .section-1 {
+  justify-content: space-between;
+}
+
+header .section-1 .div-1 {
+  gap: 10px;
+}
+
+header .section-2 .div-1 {
+  min-height: 100px;
+}
+
+header .section-2 .div-2 {
+  min-height: 200px;
+  width: 50%;
+}
+
+header .section-2 .div-3 {
+  min-height: 50px;
+}
 
 
 
@@ -84,13 +143,136 @@ body {
     MAIN
 ----------------*/
 
+main .section-1 .div-1 {
+  min-height: 50px;
+}
 
+main .section-1 .div-2 {
+  min-height: 500px;
+  width: 100%; 
+} 
 
+main .section-1 .div-3 {
+  min-height: 100px;
+}
 
+/**/
+main .section-2 .div-2 {
+  min-height: 100px;
+}
+main .section-2 .div-3 {
+  min-height: 200px;
+  width: 100%;
+}
 
+/**/
+main .section-3 .div-2 {
+  min-height: 300px;
+  width: 100%;
+}
+main .section-3 .div-3 {
+  min-height: 100px;
+}
+
+/**/
+main .section-4 .div-2 {
+  min-height: 50px;
+  flex-wrap: wrap;
+}
+main .section-4 .div-3 {
+  min-height: 400px;
+  min-width: 300px;
+
+}
+main .section-4 .div-4 {
+  min-height: 100px;
+}
+
+/**/
+main .section-5 .div-1 {
+  min-height: 100px;
+}
+
+/**/
+main .section-6 .div-1 {
+  width: calc(100% / 3);
+  height: 500px;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+main .section-6 .div-2 {
+  min-width: 50%;
+}
+
+/**/
+main .section-7 .div-1 {
+  width: 100%;
+  min-height: 200px;
+}
+
+/**/
+main .section-8 .div-1 {
+  min-height: 100px;
+}
+main .section-8 .div-2 {
+  min-height: 100px;
+}
 
 
 
 /* ---------------
     FOOTER
 ----------------*/
+
+footer .div-1 {
+  min-height: 100px;
+}
+
+footer .div-2 {
+  min-height: 400px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+/*
+<!-- 
+  
+    <div class="topbar d-flex">
+      <div class="menu-left d-flex">
+        <div class="logo debug">
+          <img src="./img/logo-small.png" alt="logo">
+        </div>
+        <a class="debug" href="#"></a>
+        <a class="debug" href="#"></a>
+        <a class="debug" href="#"></a>
+      </div>
+      <div class="menu-rigth d-flex">
+        <a class="debug" href="#"></a>
+        <a class="debug" href="#"></a>
+        <a class="debug" href="#"></a>
+        <button  class="debug"></button>
+      </div>
+    </div>
+    <div class="container-big d-flex">
+      <div class="jumbotron col">
+        <h1 class="debug"></h1>
+        <div class="row">
+          <div class="col">
+            <p class="debug" ></p>
+            <button class="debug"></button>
+            <p class="debug"></p>
+            <p class="debug">icon</p>
+          </div>
+          <div class="jumbo debug">
+            <img src="./img/jumbo.png" alt="jumbo">
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
+*/
