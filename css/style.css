@@ -15,6 +15,7 @@ header heigth 80px e 750px
   --blue-button: #0061ff;
   --lightblue-jumbo: #b4d0e7;
   --grey-language: #999999;
+  --light-grey: #d1d1d4;
   --logo-1: #a2d39b;
   --logo-2: #61082b;
   --logo-3: #0093ce;
@@ -24,6 +25,7 @@ header heigth 80px e 750px
   --logo-7: #0d2481;
   --logo-8: #ffd830;
   --logo-main: #f5f5f5;
+  --font-awesome: 'Font Awesome 5 Free';
 }
 
 /* ---------------
@@ -46,6 +48,7 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1rem;
+  text-align: center;
 }
 
 li {
@@ -63,7 +66,6 @@ li {
 
 .btn.big {
   padding: 10px 15px;
-  width: max-content;
 }
 
 
@@ -109,7 +111,7 @@ li {
 }
 
 .debug {
-  height: 100px;
+  min-height: 100px;
   width: 150px;
   border: 1px dotted brown;
   background-color: var(--color-element);
@@ -182,6 +184,7 @@ li {
 
 .jumbo .btn {
   margin: 40px 0;
+  width: max-content;
 }
 
 .jumbo i {
@@ -203,30 +206,112 @@ section:first-child {
   background-color: white;    
 }
 
+/* fatturazione */
 .billing {
   padding-bottom: 50px;
 }
 .billing h2 {
   font-size: 3rem;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
-
 .billing ul {
   gap: 50px;
 }
-
-/* 
 .billing li::before {
-  content: url(https://fontawesome.com/icons/circle-dot?f=classic&s=solid);
+  font-family: var(--font-awesome);
+  content: '\f192';
+  vertical-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--blue-button);
+  margin-right: 5px;
 }
-*/
+
+
+/* piani di pagamento */
+.plans {
+  gap: 50px;
+}
 
 .plan {
-  border: 2px solid var(--logo-main);
+  border: 1px solid var(--light-grey);
 }
 
+.plan-type {
+  padding: 10px;
+  border-bottom: 1px solid var(--light-grey);
+  text-align: center;
+}
 
+.plan-content {
+  padding: 30px;
+}
 
+.plan-content h3 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.plan-content .price {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.plan-content .slash-time {
+  padding-bottom: 50px;
+  color: var(--grey-language);
+}
+
+.plan-content ul {
+  padding-bottom: 50px;
+}
+
+.plan-content-cart {
+  padding: 30px 0 40px;
+} 
+
+.plan-content h4 {
+  padding: 40px 0 20px;
+}
+
+.plan-content li {
+  padding-bottom: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+/**/
+.plan-content-cart span {
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.plan-content-cart a {
+  text-decoration: underline;
+}
+/**/
+
+/* before */
+
+li::before {
+  font-family: var(--font-awesome);
+  font-weight: 900;
+}
+
+.plan-content ul:first-of-type li:nth-child(1)::before {
+  content: '\f007';
+}
+.plan-content ul:first-of-type li:nth-child(2)::before {
+  content: '\f07b';
+}
+.plan-content ul:first-of-type li:nth-child(3)::before {
+  content: '\f1e0';
+}
+
+.plan-content ul:last-of-type li::before {
+  content: '\f00c';
+  color: var(--blue-button);
+}
 
 
 /**/
