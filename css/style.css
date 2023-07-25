@@ -48,6 +48,10 @@ a {
   font-size: 1rem;
 }
 
+li {
+  list-style: none;
+}
+
 .btn.blue {
   background-color: var(--blue-button);
   color: white;
@@ -111,11 +115,6 @@ a {
   background-color: var(--color-element);
 }
 
-main section,
-.container-small  {
-  background-color: #e0ffff;
-  border: 3px dotted brown;
-}
 
 .div-1 {
   background-color: lightblue;
@@ -150,7 +149,7 @@ main section,
 }
 
 .menu-left img {
-  height: 20px;
+  height: 25px;
 }
 
 .jumbo {
@@ -181,7 +180,6 @@ main section,
   left: 0;
 }
 
-
 .jumbo .btn {
   margin: 40px 0;
 }
@@ -193,28 +191,43 @@ main section,
 }
 
 
-
-
 /* ---------------
     MAIN
 ----------------*/
 
 main section {
-  padding: 50px 0;
+  padding: 150px 0;
 }
 
-main .section-1 .div-1 {
-  min-height: 50px;
+section:first-child {
+  background-color: white;    
 }
 
-main .section-1 .div-2 {
-  min-height: 500px;
-  width: 100%; 
-} 
-
-main .section-1 .div-3 {
-  min-height: 100px;
+.billing {
+  padding-bottom: 50px;
 }
+.billing h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.billing ul {
+  gap: 50px;
+}
+
+/* 
+.billing li::before {
+  content: url(https://fontawesome.com/icons/circle-dot?f=classic&s=solid);
+}
+*/
+
+.plan {
+  border: 2px solid var(--logo-main);
+}
+
+
+
+
 
 /**/
 main .section-2 .div-2 {
@@ -300,25 +313,6 @@ footer .div-2 {
 /*
 MAIN
 
-Proposta per il cliente 
-Condividi proposta finale con il cliente @Angela e.. 
-•crei 
-I=1 
-attività rece. • 
-Trova il piano business che fa per te 
-O Fa.razione mensile i Singolo Professional 
-12.00 /rnese 
-Fatturazione annuale 
-• 5 TIS di spazio di archiviazione sicuro 
-Funzioni di produttività premium condivisione file semplice e sicura 
-Prova gratis per 30 giorni 
-Oppure acquista Ora 
-Punti salienti del plano 
-Invia file fino a 100 GB con OropboxTransfert 
-ne Cartelle emme su dispositivi mobili 
-Enterprise 
-contatta l'ufficio vendite per prezzi 
-ai o E 
 
 i419 2:3nrebr55' CScrivi un commento sembrecne vadat... Ne parlerà con ...ore domani e ti rara sapere Ideo., 
 ris Team lozunda 
