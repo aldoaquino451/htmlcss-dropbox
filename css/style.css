@@ -10,8 +10,6 @@ header heigth 80px e 750px
 ----------------*/
 
 :root {
-  --color-box: #e0ffff; /**/
-  --color-element: #f08080; /**/
   --blue-button: #0061ff;
   --lightblue-jumbo: #b4d0e7;
   --grey-language: #999999;
@@ -44,15 +42,36 @@ html {
   font-weight: 500;
 }
 
+main section {
+  padding: 150px 0;
+}
+
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 a {
   text-decoration: none;
   color: black;
-  font-size: 1rem;
   text-align: center;
 }
 
 li {
   list-style: none;
+}
+
+.btn {
+  display: inline-block;
 }
 
 .btn.blue {
@@ -68,75 +87,6 @@ li {
   padding: 10px 15px;
 }
 
-
-/* Utilities */
-
-.container-big {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0  auto;
-}
-.container-small {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0  auto;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-.s-between {
-  justify-content: space-between;
-}
-.centered {
-  justify-content: center;
-  align-items: center;
-}
-
-/**/
-.debug-box {
-  min-height: 200px;
-  border: 1px solid black;
-  background-color: var(--color-box);
-}
-
-.debug {
-  min-height: 100px;
-  width: 150px;
-  border: 1px dotted brown;
-  background-color: var(--color-element);
-}
-
-
-.div-1 {
-  background-color: lightblue;
-  border: 1px solid black;
-}
-
-.div-2 {
-  background-color: lightgoldenrodyellow;
-  border: 1px solid black;
-}
-
-.div-3 {
-  background-color: lightsalmon;
-  border: 1px solid black;
-}
-
-.div-4 {
-  background-color: lightseagreen;
-  border: 1px solid black;
-}
 
 /* ---------------
     HEADER
@@ -161,8 +111,6 @@ li {
   
 .jumbo h1 {
   padding: 50px 0;
-  font-size: 5rem;
-  font-weight: 800;
 }
 
 .jumbo-content {
@@ -198,20 +146,14 @@ li {
     MAIN
 ----------------*/
 
-main section {
-  padding: 150px 0;
-}
+/* PIANI DI PAGAMENTO */
 
-section:first-child {
-  background-color: white;    
-}
 
-/* fatturazione */
+/* Fatturazione */
 .billing {
   padding-bottom: 50px;
 }
 .billing h2 {
-  font-size: 3rem;
   padding-bottom: 50px;
 }
 .billing ul {
@@ -228,9 +170,10 @@ section:first-child {
 }
 
 
-/* piani di pagamento */
+/* Piani */
 .plans {
   gap: 50px;
+  font-size: 0.9rem;
 }
 
 .plan {
@@ -249,7 +192,6 @@ section:first-child {
 }
 
 .plan-content h3 {
-  font-size: 1.5rem;
   padding-bottom: 20px;
 }
 
@@ -281,7 +223,6 @@ section:first-child {
   gap: 5px;
 }
 
-/**/
 .plan-content-cart span {
   padding-bottom: 40px;
   border-bottom: 1px solid var(--light-grey);
@@ -290,10 +231,8 @@ section:first-child {
 .plan-content-cart a {
   text-decoration: underline;
 }
-/**/
 
-/* before */
-
+/* Piani::before */
 li::before {
   font-family: var(--font-awesome);
   font-weight: 900;
@@ -313,6 +252,36 @@ li::before {
   content: '\f00c';
   color: var(--blue-button);
 }
+
+/* Enterprise */
+.enterprise {
+  border: 1px solid var(--light-grey);
+  margin-top: 50px;
+}
+
+.enterprise-type {
+  border-bottom: 1px solid var(--light-grey);
+  text-align: center;
+  padding: 10px;
+}
+
+.enterprise-content {
+  padding: 30px;
+}
+
+.enterprise-content .text {
+  width: 70%;
+  padding-right: 20px;
+}
+
+.enterprise-content h4 {
+  padding: 20px 0 50px 0;
+}
+
+
+/* CONTATTATO PER PARTNER */
+
+
 
 
 /**/
@@ -399,28 +368,6 @@ footer .div-2 {
 /*
 MAIN
 
-
-i419 2:3nrebr55' CScrivi un commento sembrecne vadat... Ne parlerà con ...ore domani e ti rara sapere Ideo., 
-ris Team lozunda 
-Advanced Enterprise 
-▪ 18.00 Confattaci /utente/mese 
-30 3 o più utenti 
-• Tutto lo spazio di cui ha bisogno il tuo team 
-Sofistica. funzioni di controllo e per tenere al sicuro tutti i file del tuo .am 
-Prova gratis per 30 giorni 
-oopure deqUISta Ora 
-Punti salienti del plano ne Nessun limite di spazio per i file Cartelle emme su dispositivi ne mobili Risparmio stirate rispetto alle iscrizioni singole Possibilità di inserire nuovi membri del team Gestione dei permessi in base ai ruoli 
-Team 
-Soluzioni personalizzate e supporto su misura per aiutare i professioni. O nella gestione su qualsiasi scala. 
-
-▪ 10 o più utenti 
-• Soluzioni personalizzatili per la tua azienda 
-assistenza .rsonalizzata aiutare gli amministratori in una gestione su larga scala 
-Conf.. 
-oppure acquista Ora 
-Punti salienti del piano 
-ne Cartelle emme su dispositivi mobili Servizio assistenza 24/11 Possibilità di personalizzazione totale 
-Contatta PufRtto vendite 
 Entra in contatto con un partner Dropbox Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui. 
 Trova un partner 
 Esegui più operazioni con Dropbox Business 
@@ -502,3 +449,71 @@ la Italiano ■
     </div>
  -->
 */
+
+
+/* Utilities */
+
+.container-big {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0  auto;
+}
+.container-small {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0  auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-between {
+  justify-content: space-between;
+}
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+/**/
+.debug-box {
+  min-height: 200px;
+  border: 1px solid black;
+}
+
+.debug {
+  min-height: 100px;
+  width: 150px;
+  border: 1px dotted brown;
+}
+
+
+.div-1 {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.div-2 {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid black;
+}
+
+.div-3 {
+  background-color: lightsalmon;
+  border: 1px solid black;
+}
+
+.div-4 {
+  background-color: lightseagreen;
+  border: 1px solid black;
+}
