@@ -43,9 +43,8 @@ html {
 }
 
 main section {
-  padding: 150px 0;
+  margin: 150px 0;
 }
-
 
 h1 {
   font-size: 5rem;
@@ -53,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 h3 {
@@ -72,6 +71,14 @@ li {
 
 .btn {
   display: inline-block;
+}
+
+.btn.max-c {
+  width: max-content;
+}
+
+.btn.white {
+  border: 1px solid black;
 }
 
 .btn.blue {
@@ -132,7 +139,6 @@ li {
 
 .jumbo .btn {
   margin: 40px 0;
-  width: max-content;
 }
 
 .jumbo i {
@@ -168,7 +174,6 @@ li {
   color: var(--blue-button);
   margin-right: 5px;
 }
-
 
 /* Piani */
 .plans {
@@ -281,40 +286,60 @@ li::before {
 
 /* CONTATTATO PER PARTNER */
 
-
-
-
-/**/
-main .section-2 .div-2 {
-  min-height: 100px;
+.partner-image {
+  width: 60%;
 }
-main .section-2 .div-3 {
-  min-height: 200px;
+
+.partner-image img {
   width: 100%;
 }
 
-/**/
-main .section-3 .div-2 {
-  min-height: 300px;
-  width: 100%;
-}
-main .section-3 .div-3 {
-  min-height: 100px;
+.partner-content {
+  width: 40%;
+  padding: 50px 30px 0 50px;
 }
 
-/**/
-main .section-4 .div-2 {
-  min-height: 50px;
+.partner-content p {
+  padding: 20px 0 50px;
+}
+
+
+/* DROPBOX BUSINESS */
+
+.cards {
   flex-wrap: wrap;
+  gap: 60px;
+  padding-top: 60px;
 }
-main .section-4 .div-3 {
-  min-height: 400px;
-  min-width: 300px;
 
+.card {
+  min-height: 400px;
+  max-width: calc( (100% - 120px) / 3);
+  min-width: 250px;
 }
-main .section-4 .div-4 {
-  min-height: 100px;
+
+.card img {
+  width: 100%;
 }
+
+.card h3 {
+  padding-bottom: 30px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**/
 main .section-5 .div-1 {
@@ -368,23 +393,7 @@ footer .div-2 {
 /*
 MAIN
 
-Entra in contatto con un partner Dropbox Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui. 
-Trova un partner 
-Esegui più operazioni con Dropbox Business 
 
-Passa di meno da uno strumento all'altro 
-Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox. 
-o 
-0 messaggio su Neo/ - Passa di meno da uno strumento all'altro 
-Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox. 
-o 
-< 
-Proposta per il cliente 
-Passa di meno da uno Passa di meno da uno strumento all'altro strumento all'altro 
-Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox. 
-° 
-Passa di meno da uno strumento all'altro 
-Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox. 
 Più di 500.000 team utilizzano Dropbox Business 
 Soopridmomù sui nostri clienti 
 151 
