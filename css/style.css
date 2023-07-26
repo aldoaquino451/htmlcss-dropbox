@@ -19,7 +19,7 @@ header heigth 80px e 750px
   --logo-3: #0093ce;
   --logo-4: #ff1c1c;
   --logo-5: #d5001f;
-  --logo-6: #d5001f;
+  --logo-6: #b4d0e7;
   --logo-7: #0d2481;
   --logo-8: #ffd830;
   --logo-main: #f5f5f5;
@@ -47,11 +47,15 @@ main section {
 }
 
 main a.link {
-  color: blue;
+  color: #0000FF;
 }
 
 main a.link:visited {
-  color: violet;
+  color: #800080;
+}
+
+main a.link:active {
+  color: #800080;
 }
 
 h1 {
@@ -87,6 +91,7 @@ li {
 
 .btn.white {
   border: 1px solid black;
+  background-color: white;
 }
 
 .btn.blue {
@@ -348,18 +353,88 @@ li::before {
 }
 
 
-/* LOGO BRAND AFFILIATI */
+/* BRAND AFFILIATI */
 
 .brand-container > * {
   width: calc(100vw * 1/3);
+  height: calc(100vw * 1/3);
+}
+
+.brand-left,
+.brand-right {
+  flex-wrap: wrap;
+}
+
+.brand {
+  width: 50%;
+  height: 50%;
+}
+
+.brand svg {
+  width: 50%;
+}
+
+.brand svg * {
+  fill:  white;
+}
+
+.brand.designit {
+  background-color: var(--logo-1);
+}
+.brand.asu {
+  background-color: var(--logo-2);
+}
+.brand.uf {
+  background-color: var(--logo-3);
+}
+.brand.topps {
+  background-color: var(--logo-4);
+}
+.brand.bicycle {
+  background-color: var(--logo-5);
+}
+.brand.hearst {
+  background-color: var(--logo-6);
+}
+.brand.planet {
+  background-color: var(--logo-7);
+}
+.brand.outdoor {
+  background-color: var(--logo-8);
+}
+
+.main-brand {
+  background-color: var(--logo-main);
+  padding: 50px;
+  overflow: auto;
+}
+.main-brand svg {
+  width: 50%;
+  padding-bottom: 20px;
+}
+.main-brand div:first-of-type {
+  width: 100px;
+  border-bottom: 1px solid var(--light-grey);
+}
+.main-brand p {
+  padding: 50px 0;
 }
 
 
-
-
-
-
-
+.my-brand {
+  background-color: var(--logo-6);
+  justify-content: center;
+  padding: 100px 0;
+  gap: 200px;
+} 
+.my-brand h2 {
+  color: var(--logo-2);
+}
+.my-brand .btn {
+  border: none;
+  display: inline;
+  padding: 10px 50px;
+}
 
 
 
@@ -437,45 +512,6 @@ Applicazione desktop Applicazione desktop Applicazione desktop Applicazione desk
 la Italiano ■ 
 */
 
-
-
-/*
-<!-- 
-  
-    <div class="topbar d-flex">
-      <div class="menu-left d-flex">
-        <div class="logo debug">
-          <img src="./img/logo-small.png" alt="logo">
-        </div>
-        <a class="debug" href="#"></a>
-        <a class="debug" href="#"></a>
-        <a class="debug" href="#"></a>
-      </div>
-      <div class="menu-rigth d-flex">
-        <a class="debug" href="#"></a>
-        <a class="debug" href="#"></a>
-        <a class="debug" href="#"></a>
-        <button  class="debug"></button>
-      </div>
-    </div>
-    <div class="container-big d-flex">
-      <div class="jumbotron col">
-        <h1 class="debug"></h1>
-        <div class="row">
-          <div class="col">
-            <p class="debug" ></p>
-            <button class="debug"></button>
-            <p class="debug"></p>
-            <p class="debug">icon</p>
-          </div>
-          <div class="jumbo debug">
-            <img src="./img/jumbo.png" alt="jumbo">
-          </div>
-        </div>
-      </div>
-    </div>
- -->
-*/
 
 
 /* Utilities */
