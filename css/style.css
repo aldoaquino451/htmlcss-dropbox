@@ -58,6 +58,7 @@ main a.link:active {
   color: #800080;
 }
 
+/* Tag  */
 h1 {
   font-size: 5rem;
   font-weight: 800;
@@ -85,6 +86,7 @@ li {
   list-style: none;
 }
 
+/* Classi */
 .btn.max-c {
   width: max-content;
 }
@@ -105,6 +107,39 @@ li {
 
 .btn.big {
   padding: 10px 15px;
+}
+
+/* Utilities */
+.container-big {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0  auto;
+}
+.container-small {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0  auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-between {
+  justify-content: space-between;
+}
+.centered {
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -423,160 +458,76 @@ li::before {
 
 .my-brand {
   background-color: var(--logo-6);
-  justify-content: center;
   padding: 100px 0;
-  gap: 200px;
 } 
 .my-brand h2 {
   color: var(--logo-2);
+  margin-right: 50px;
 }
 .my-brand .btn {
-  border: none;
-  display: inline;
+  height: max-content;
   padding: 10px 50px;
+  border: none;
 }
 
 
+/* DOMANDE FREQUENTI */
 
-
-/**/
-main .section-6 .div-1 {
-  width: calc(100% / 3);
-  height: 500px;
-  flex-wrap: wrap;
-  overflow: auto;
-}
-main .section-6 .div-2 {
-  min-width: 50%;
+.faq > * {
+  border-bottom: 1px solid  black;
 }
 
-/**/
-main .section-7 .div-1 {
-  width: 100%;
-  min-height: 200px;
+.faq > h2 {
+  padding-bottom: 70px;
 }
 
-/**/
-main .section-8 .div-1 {
-  min-height: 100px;
+.faq > div {
+  padding: 40px 0;
 }
-main .section-8 .div-2 {
-  min-height: 100px;
+
+.faq h4 {
+  padding-bottom: 20px;
+}
+
+.faq i {
+  padding: 0 40px;
 }
 
 
-main .section-6 .div-2 img {
-  fill: yellow;
-}
 /* ---------------
     FOOTER
 ----------------*/
 
-footer .div-1 {
-  min-height: 100px;
+footer {
+  padding-top: 100px ;
+  background-color: black;
+  color: white;
 }
 
-footer .div-2 {
-  min-height: 400px;
-  width: 100%;
+footer h3 {
+  padding-bottom: 30px;
 }
 
-
-
-/*
-MAIN
-
-
-Più di 500.000 team utilizzano Dropbox Business 
-Soopridmomù sui nostri clienti 
-151 
-Arizona State University 
-
-Designit® a wipro company 
-Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox. 
-pOfi = p 
-Passa di meno da uno strumento all'altro 
-Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox. 
-membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper. 
-Morten Thomsen, Global IT Lead 
-WORLD éserct e Retler 
-bnely pknet \ 
-Porta Dropbox Business nella tua azienda. 
-Inizia la tua prova gratuita 
-Domande frequenti 
-Qual la differenza tra Dropbox Business Standard e Dropbox Business Advanced? 
-Qual la differenza tra Dropbox Business Standard e Dropbox Business Advanced? 
-Qual la differenza tra Dropbox Business Standard e Dropbox Business Advanced? 
-Dropbox Prodotti Azienda Supporto Community 
-Applicazione desktop Applicazione desktop Applicazione desktop Applicazione desktop Applicazione desktop Perché Dropbox Perché Dropbox Perché Dropbox Perché Dropbox Perché Dropbox Piani Piani Piani Piani Piani Sicurezza Sicurezza Sicurezza Sicurezza Sicurezza funzioni funzioni funzioni funzioni funzioni 
-la Italiano ■ 
-*/
-
-
-
-/* Utilities */
-
-.container-big {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0  auto;
-}
-.container-small {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0  auto;
+footer span {
+  padding-bottom: 20px;
 }
 
-.d-flex {
-  display: flex;
+footer .info  {
+  gap: 10px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-.s-between {
-  justify-content: space-between;
-}
-.centered {
-  justify-content: center;
+footer .language {
+  width: max-content;
+  padding: 50px 20px 50px 0;
+  margin-top: 100px;
   align-items: center;
+  border-top: 1px solid var(--grey-language);
+  color: var(--grey-language);
 }
 
-/**/
-.debug-box {
-  min-height: 200px;
-  border: 1px solid black;
-}
-
-.debug {
-  min-height: 100px;
-  width: 150px;
-  border: 1px dotted brown;
+footer .language span {
+  padding: 0 10px; 
 }
 
 
-.div-1 {
-  background-color: lightblue;
-  border: 1px solid black;
-}
 
-.div-2 {
-  background-color: lightgoldenrodyellow;
-  border: 1px solid black;
-}
-
-.div-3 {
-  background-color: lightsalmon;
-  border: 1px solid black;
-}
-
-.div-4 {
-  background-color: lightseagreen;
-  border: 1px solid black;
-}
