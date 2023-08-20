@@ -40,6 +40,11 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  width: 100vw;
+}
+
+body {
+  width: 100vw;
 }
 
 main section {
@@ -48,6 +53,7 @@ main section {
 
 
 /* Tag  */
+
 h1 {
   font-size: 5rem;
   font-weight: 800;
@@ -61,42 +67,29 @@ h3 {
   font-size: 1.5rem;
 }
 
-a {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-}
-
-a.btn {
-  display: inline-block;
-  text-decoration: none;
-}
-
 li {
   list-style: none;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.btn {
+  display: inline-block;
+}
+
 
 /* Classi */
-main a.link {
-  color: #0000FF;
-  text-decoration: underline;
+
+.btn.small {
+  padding: 5px 15px;
 }
 
-main a.link:visited {
-  color: #800080;
-}
-
-main a.link:active {
-  color: #800080;
-}
-
-.btn.blue:hover {
-  opacity: 0.8;
-}
-
-.btn.white:hover {
-  color: rgba(0, 0, 0, 0.5);
+.btn.big {
+  padding: 10px 15px;
 }
 
 .btn.max-c {
@@ -108,17 +101,31 @@ main a.link:active {
   background-color: white;
 }
 
+.btn.white:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .btn.blue {
   background-color: var(--blue-button);
   color: white;
 }
 
-.btn.small {
-  padding: 5px 15px;
+.btn.blue:hover {
+  opacity: 0.8;
 }
 
-.btn.big {
-  padding: 10px 15px;
+
+main a.link {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+main a.link:visited {
+  color: #800080;
+}
+
+main a.link:active {
+  color: #800080;
 }
 
 
@@ -156,56 +163,55 @@ main a.link:active {
   align-items: center;
 }
 
+.gap-40 {
+  gap: 40px;
+}
 
 /* ---------------
     HEADER
 ----------------*/
 
+/* first section */
+
 .topbar {
-  position: fixed;
+  position: fixed;      
   z-index: 999;
   width: 100%;
   height: 80px;
   padding: 0 20px;
-  gap: 40px;
   background-color: white;
-  box-shadow: 0 1px 2px var(--light-grey);
-}
-
-.topbar ul{
-  height: 100%;
-  gap: 40px;
+  box-shadow: 0 1px 4px var(--light-grey);
 }
 
 .topbar li {
-  display: flex;
-  align-items: center;
+  border-bottom: 2px solid white;
 }
 
-.topbar li a {
-  display:block
+.topbar-right li:last-child {
+  border: none;
+}
+.topbar-left li:first-child {
+  border: none;
+}
+
+.topbar li:hover {
+  border-color: black;
 }
 
 
-.topbar .link {
-  height: 100%;
-  border: 2px solid white;
-}
+/* second section */
 
-.topbar .link:hover {
-  border-bottom: 2px solid black;
-}
 
 .jumbo {
   background-color: var(--lightblue-jumbo);
-  padding-top: 50px;
+  padding-top: 180px;
 }
   
 .jumbo h1 {
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 
-.jumbo-content {
+.jumbo-text {
   width: calc(100% * 1/3);
   padding-right: 20px;
 }
@@ -216,7 +222,7 @@ main a.link:active {
 }
 
 .jumbo-image img {
-  width: 100%;
+  width: 110%;
   position: absolute;
   right: 0;
   left: 0;
@@ -270,7 +276,7 @@ ul.billing {
 }
 
 .plan {
-  width: calc(100% / 3);
+  width: calc((100%  - 100px) / 3);
   border: 1px solid var(--light-grey);
 }
 
@@ -352,18 +358,19 @@ li::before {
 }
 
 .enterprise-type {
-  border-bottom: 1px solid var(--light-grey);
-  text-align: center;
   padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--light-grey);
 }
 
 .enterprise-content {
   padding: 30px;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-.enterprise-content .text {
+.enterprise-text {
   width: 70%;
-  padding-right: 20px;
 }
 
 .enterprise-content h4 {
@@ -382,12 +389,12 @@ li::before {
   width: 100%;
 }
 
-.partner-content {
+.partner-text {
   width: 40%;
   padding: 50px 30px 0 50px;
 }
 
-.partner-content p {
+.partner-text p {
   padding: 20px 0 50px;
 }
 

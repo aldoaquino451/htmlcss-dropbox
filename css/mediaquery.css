@@ -1,0 +1,182 @@
+
+@media screen and (max-width: 1078px) {
+
+  /* general  */
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /* header: topbar  */
+  .topbar { 
+    position:relative;      
+    z-index: auto;
+    width: auto;
+    height: 140px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+  .topbar > * {
+    flex-direction: column;
+  }
+  .topbar ul {
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  /* header: jumbo  */
+  .jumbo {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .jumbo-content {
+    flex-direction: column-reverse;
+  }
+  .jumbo-text {
+    width: auto;
+    padding-right: 0;
+    position: relative;
+  }
+  .jumbo-image {
+    width: auto;
+    padding-bottom: 50px;
+  }
+  .jumbo-image img {
+    width: 100%;
+    position: relative;
+  }
+  .jumbo .icon.link {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+    right: 50px;
+  }
+
+}
+
+
+@media screen and (max-width:768px) {
+  
+  /* general  */
+  h1 {
+    font-size: 3rem;
+  }
+  h1,
+  h2, 
+  h3,
+  h4 {
+    text-align: center;
+  }
+
+  /* header: jumbo  */
+  .jumbo {
+    padding-top: 50px;
+  }
+  .jumbo span {
+    text-align: left;
+  }
+
+  /* main: payment plans */
+  .billing {
+    justify-content: center;
+  }
+  .plans {
+    flex-direction: column;
+  }
+  .plan,
+  .enterprise {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .enterprise-content {
+    flex-direction: column;
+  }
+  .enterprise-content > * {
+    width: auto;
+  }
+
+  .enterprise-content .btn {
+    width: 100%;
+  }
+
+  /* main: links partner */
+  .partner {
+    flex-direction: column;
+  }
+  .partner > * {
+    width: auto;
+  }
+  .partner img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .partner .btn {
+    width: 100%;
+  }
+
+  /* main: dropbox business  */
+  .business a.link {
+    margin: 0 auto;
+  }
+
+  /* main: partner brands  */
+  .brand-container {
+    flex-wrap: wrap;
+  }
+  .brand-left,
+  .brand-right {
+    width: 50vw;
+    height: 50vw;
+  }
+  .brand-selected {
+    order: 2;
+    width: 100%;
+    height: auto;
+    padding: 20px 50px;
+  }
+
+  .brand-selected-content {
+    position: relative;
+    height: 20vw;
+  }
+  
+  .brand-selected-content svg {
+    width: 50%;
+  }
+  
+  .brand-selected p {
+    padding: 20px 0;
+  }
+  .my-brand-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer .info {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  footer h3 {
+    text-align: left;
+  }
+}
+
+
+
+
+
+/* 
+@media screen and (max-width:480px) {
+
+}
+ */
+
